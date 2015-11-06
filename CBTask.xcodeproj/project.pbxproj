@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A13DBA21BCE3BC800BD466E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBA11BCE3BC800BD466E /* main.m */; };
+		5A13DBA51BCE3BC800BD466E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBA41BCE3BC800BD466E /* AppDelegate.m */; };
+		5A13DBAB1BCE3BC800BD466E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A13DBA91BCE3BC800BD466E /* Main.storyboard */; };
+		5A13DBAD1BCE3BC800BD466E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A13DBAC1BCE3BC800BD466E /* Assets.xcassets */; };
+		5A13DBD51BCE3DC100BD466E /* exercise.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A13DBD41BCE3DC100BD466E /* exercise.json */; settings = {ASSET_TAGS = (); }; };
+		5A13DBDE1BCE3E3B00BD466E /* CBAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBDD1BCE3E3B00BD466E /* CBAccount.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DBE31BCE3F2300BD466E /* CBCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBE21BCE3F2300BD466E /* CBCustomer.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DBE81BCE3F3800BD466E /* CBTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBE71BCE3F3800BD466E /* CBTransaction.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DBED1BCE3F6600BD466E /* CBAtm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBEC1BCE3F6600BD466E /* CBAtm.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DBF21BCE407600BD466E /* CBPendingTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBF11BCE407600BD466E /* CBPendingTransaction.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DBF71BCE417B00BD466E /* CBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBF61BCE417B00BD466E /* CBModel.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DBFB1BCE436200BD466E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A13DBFA1BCE436200BD466E /* CoreLocation.framework */; };
+		5A13DC001BCE486100BD466E /* CBCustomerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DBFF1BCE486100BD466E /* CBCustomerManager.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC061BCE4F8300BD466E /* NSNumber+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC051BCE4F8300BD466E /* NSNumber+Helpers.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC0D1BCE598700BD466E /* CBAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC0C1BCE598700BD466E /* CBAccountTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC121BCE5A0800BD466E /* CBTransactionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC111BCE5A0800BD466E /* CBTransactionCell.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC171BCF852B00BD466E /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC161BCF852B00BD466E /* NSDate+Helpers.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC241BCFA60600BD466E /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC1C1BCFA60600BD466E /* ALView+PureLayout.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC271BCFA60600BD466E /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC1E1BCFA60600BD466E /* NSArray+PureLayout.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC2A1BCFA60600BD466E /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC201BCFA60600BD466E /* NSLayoutConstraint+PureLayout.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC2F1BCFAF4000BD466E /* CBAccountTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC2E1BCFAF4000BD466E /* CBAccountTileView.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC341BCFBE7C00BD466E /* CBAtmMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC331BCFBE7C00BD466E /* CBAtmMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5A13DC381BCFBECF00BD466E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A13DC371BCFBECF00BD466E /* MapKit.framework */; };
+		5A13DC451BCFCFA400BD466E /* CBCustomer+BusinessLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13DC441BCFCFA400BD466E /* CBCustomer+BusinessLogic.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A13DB9D1BCE3BC800BD466E /* CBTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A13DBA11BCE3BC800BD466E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A13DBA31BCE3BC800BD466E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A13DBA41BCE3BC800BD466E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A13DBAA1BCE3BC800BD466E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A13DBAC1BCE3BC800BD466E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A13DBB11BCE3BC800BD466E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A13DBD41BCE3DC100BD466E /* exercise.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercise.json; sourceTree = "<group>"; };
+		5A13DBDC1BCE3E3B00BD466E /* CBAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccount.h; sourceTree = "<group>"; };
+		5A13DBDD1BCE3E3B00BD466E /* CBAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccount.m; sourceTree = "<group>"; };
+		5A13DBE11BCE3F2300BD466E /* CBCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomer.h; sourceTree = "<group>"; };
+		5A13DBE21BCE3F2300BD466E /* CBCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomer.m; sourceTree = "<group>"; };
+		5A13DBE61BCE3F3800BD466E /* CBTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTransaction.h; sourceTree = "<group>"; };
+		5A13DBE71BCE3F3800BD466E /* CBTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTransaction.m; sourceTree = "<group>"; };
+		5A13DBEB1BCE3F6600BD466E /* CBAtm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAtm.h; sourceTree = "<group>"; };
+		5A13DBEC1BCE3F6600BD466E /* CBAtm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAtm.m; sourceTree = "<group>"; };
+		5A13DBF01BCE407600BD466E /* CBPendingTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPendingTransaction.h; sourceTree = "<group>"; };
+		5A13DBF11BCE407600BD466E /* CBPendingTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPendingTransaction.m; sourceTree = "<group>"; };
+		5A13DBF51BCE417B00BD466E /* CBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBModel.h; sourceTree = "<group>"; };
+		5A13DBF61BCE417B00BD466E /* CBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBModel.m; sourceTree = "<group>"; };
+		5A13DBFA1BCE436200BD466E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5A13DBFE1BCE486100BD466E /* CBCustomerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomerManager.h; sourceTree = "<group>"; };
+		5A13DBFF1BCE486100BD466E /* CBCustomerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomerManager.m; sourceTree = "<group>"; };
+		5A13DC041BCE4F8300BD466E /* NSNumber+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Helpers.h"; sourceTree = "<group>"; };
+		5A13DC051BCE4F8300BD466E /* NSNumber+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Helpers.m"; sourceTree = "<group>"; };
+		5A13DC0B1BCE598700BD466E /* CBAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccountTableViewController.h; sourceTree = "<group>"; };
+		5A13DC0C1BCE598700BD466E /* CBAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccountTableViewController.m; sourceTree = "<group>"; };
+		5A13DC101BCE5A0800BD466E /* CBTransactionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTransactionCell.h; sourceTree = "<group>"; };
+		5A13DC111BCE5A0800BD466E /* CBTransactionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTransactionCell.m; sourceTree = "<group>"; };
+		5A13DC151BCF852B00BD466E /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
+		5A13DC161BCF852B00BD466E /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
+		5A13DC1B1BCFA60600BD466E /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		5A13DC1C1BCFA60600BD466E /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		5A13DC1D1BCFA60600BD466E /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		5A13DC1E1BCFA60600BD466E /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		5A13DC1F1BCFA60600BD466E /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		5A13DC201BCFA60600BD466E /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		5A13DC211BCFA60600BD466E /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		5A13DC221BCFA60600BD466E /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		5A13DC231BCFA60600BD466E /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		5A13DC2D1BCFAF4000BD466E /* CBAccountTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccountTileView.h; sourceTree = "<group>"; };
+		5A13DC2E1BCFAF4000BD466E /* CBAccountTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccountTileView.m; sourceTree = "<group>"; };
+		5A13DC321BCFBE7C00BD466E /* CBAtmMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAtmMapViewController.h; sourceTree = "<group>"; };
+		5A13DC331BCFBE7C00BD466E /* CBAtmMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAtmMapViewController.m; sourceTree = "<group>"; };
+		5A13DC371BCFBECF00BD466E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5A13DC431BCFCFA400BD466E /* CBCustomer+BusinessLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBCustomer+BusinessLogic.h"; sourceTree = "<group>"; };
+		5A13DC441BCFCFA400BD466E /* CBCustomer+BusinessLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBCustomer+BusinessLogic.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A13DB9A1BCE3BC700BD466E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A13DC381BCFBECF00BD466E /* MapKit.framework in Frameworks */,
+				5A13DBFB1BCE436200BD466E /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A13DB941BCE3BC700BD466E = {
+			isa = PBXGroup;
+			children = (
+				5A13DB9F1BCE3BC800BD466E /* CBTask */,
+				5A13DB9E1BCE3BC800BD466E /* Products */,
+				5A13DBFC1BCE43C400BD466E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A13DB9E1BCE3BC800BD466E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DB9D1BCE3BC800BD466E /* CBTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A13DB9F1BCE3BC800BD466E /* CBTask */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DC091BCE4FD900BD466E /* Categories */,
+				5A13DBD31BCE3D6900BD466E /* Model */,
+				5A13DBFD1BCE43DB00BD466E /* Views + Controllers */,
+				5A13DBA31BCE3BC800BD466E /* AppDelegate.h */,
+				5A13DBA41BCE3BC800BD466E /* AppDelegate.m */,
+				5A13DBA91BCE3BC800BD466E /* Main.storyboard */,
+				5A13DBA01BCE3BC800BD466E /* Supporting Files */,
+			);
+			path = CBTask;
+			sourceTree = "<group>";
+		};
+		5A13DBA01BCE3BC800BD466E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DBAC1BCE3BC800BD466E /* Assets.xcassets */,
+				5A13DBD41BCE3DC100BD466E /* exercise.json */,
+				5A13DBB11BCE3BC800BD466E /* Info.plist */,
+				5A13DBA11BCE3BC800BD466E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A13DBD31BCE3D6900BD466E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DBFE1BCE486100BD466E /* CBCustomerManager.h */,
+				5A13DBFF1BCE486100BD466E /* CBCustomerManager.m */,
+				5A13DC031BCE4A2F00BD466E /* DTOs */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5A13DBFC1BCE43C400BD466E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DC371BCFBECF00BD466E /* MapKit.framework */,
+				5A13DC1A1BCFA5FD00BD466E /* PureLayout */,
+				5A13DBFA1BCE436200BD466E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A13DBFD1BCE43DB00BD466E /* Views + Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DC0B1BCE598700BD466E /* CBAccountTableViewController.h */,
+				5A13DC0C1BCE598700BD466E /* CBAccountTableViewController.m */,
+				5A13DC101BCE5A0800BD466E /* CBTransactionCell.h */,
+				5A13DC111BCE5A0800BD466E /* CBTransactionCell.m */,
+				5A13DC2D1BCFAF4000BD466E /* CBAccountTileView.h */,
+				5A13DC2E1BCFAF4000BD466E /* CBAccountTileView.m */,
+				5A13DC321BCFBE7C00BD466E /* CBAtmMapViewController.h */,
+				5A13DC331BCFBE7C00BD466E /* CBAtmMapViewController.m */,
+			);
+			name = "Views + Controllers";
+			sourceTree = "<group>";
+		};
+		5A13DC031BCE4A2F00BD466E /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DBF51BCE417B00BD466E /* CBModel.h */,
+				5A13DBF61BCE417B00BD466E /* CBModel.m */,
+				5A13DBE11BCE3F2300BD466E /* CBCustomer.h */,
+				5A13DBE21BCE3F2300BD466E /* CBCustomer.m */,
+				5A13DBDC1BCE3E3B00BD466E /* CBAccount.h */,
+				5A13DBDD1BCE3E3B00BD466E /* CBAccount.m */,
+				5A13DBE61BCE3F3800BD466E /* CBTransaction.h */,
+				5A13DBE71BCE3F3800BD466E /* CBTransaction.m */,
+				5A13DBF01BCE407600BD466E /* CBPendingTransaction.h */,
+				5A13DBF11BCE407600BD466E /* CBPendingTransaction.m */,
+				5A13DBEB1BCE3F6600BD466E /* CBAtm.h */,
+				5A13DBEC1BCE3F6600BD466E /* CBAtm.m */,
+			);
+			name = DTOs;
+			sourceTree = "<group>";
+		};
+		5A13DC091BCE4FD900BD466E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DC041BCE4F8300BD466E /* NSNumber+Helpers.h */,
+				5A13DC051BCE4F8300BD466E /* NSNumber+Helpers.m */,
+				5A13DC151BCF852B00BD466E /* NSDate+Helpers.h */,
+				5A13DC161BCF852B00BD466E /* NSDate+Helpers.m */,
+				5A13DC431BCFCFA400BD466E /* CBCustomer+BusinessLogic.h */,
+				5A13DC441BCFCFA400BD466E /* CBCustomer+BusinessLogic.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		5A13DC1A1BCFA5FD00BD466E /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5A13DC1B1BCFA60600BD466E /* ALView+PureLayout.h */,
+				5A13DC1C1BCFA60600BD466E /* ALView+PureLayout.m */,
+				5A13DC1D1BCFA60600BD466E /* NSArray+PureLayout.h */,
+				5A13DC1E1BCFA60600BD466E /* NSArray+PureLayout.m */,
+				5A13DC1F1BCFA60600BD466E /* NSLayoutConstraint+PureLayout.h */,
+				5A13DC201BCFA60600BD466E /* NSLayoutConstraint+PureLayout.m */,
+				5A13DC211BCFA60600BD466E /* PureLayout.h */,
+				5A13DC221BCFA60600BD466E /* PureLayout+Internal.h */,
+				5A13DC231BCFA60600BD466E /* PureLayoutDefines.h */,
+			);
+			name = PureLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A13DB9C1BCE3BC700BD466E /* CBTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A13DBCA1BCE3BC800BD466E /* Build configuration list for PBXNativeTarget "CBTask" */;
+			buildPhases = (
+				5A13DB991BCE3BC700BD466E /* Sources */,
+				5A13DB9A1BCE3BC700BD466E /* Frameworks */,
+				5A13DB9B1BCE3BC700BD466E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBTask;
+			productName = CBTask;
+			productReference = 5A13DB9D1BCE3BC800BD466E /* CBTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A13DB951BCE3BC700BD466E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Vlad Paraschiv";
+				TargetAttributes = {
+					5A13DB9C1BCE3BC700BD466E = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A13DB981BCE3BC700BD466E /* Build configuration list for PBXProject "CBTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A13DB941BCE3BC700BD466E;
+			productRefGroup = 5A13DB9E1BCE3BC800BD466E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A13DB9C1BCE3BC700BD466E /* CBTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A13DB9B1BCE3BC700BD466E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A13DBAD1BCE3BC800BD466E /* Assets.xcassets in Resources */,
+				5A13DBD51BCE3DC100BD466E /* exercise.json in Resources */,
+				5A13DBAB1BCE3BC800BD466E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A13DB991BCE3BC700BD466E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A13DBDE1BCE3E3B00BD466E /* CBAccount.m in Sources */,
+				5A13DC121BCE5A0800BD466E /* CBTransactionCell.m in Sources */,
+				5A13DBF21BCE407600BD466E /* CBPendingTransaction.m in Sources */,
+				5A13DC2A1BCFA60600BD466E /* NSLayoutConstraint+PureLayout.m in Sources */,
+				5A13DC241BCFA60600BD466E /* ALView+PureLayout.m in Sources */,
+				5A13DC341BCFBE7C00BD466E /* CBAtmMapViewController.m in Sources */,
+				5A13DC271BCFA60600BD466E /* NSArray+PureLayout.m in Sources */,
+				5A13DBF71BCE417B00BD466E /* CBModel.m in Sources */,
+				5A13DC2F1BCFAF4000BD466E /* CBAccountTileView.m in Sources */,
+				5A13DC001BCE486100BD466E /* CBCustomerManager.m in Sources */,
+				5A13DC451BCFCFA400BD466E /* CBCustomer+BusinessLogic.m in Sources */,
+				5A13DBE31BCE3F2300BD466E /* CBCustomer.m in Sources */,
+				5A13DBA51BCE3BC800BD466E /* AppDelegate.m in Sources */,
+				5A13DBA21BCE3BC800BD466E /* main.m in Sources */,
+				5A13DC061BCE4F8300BD466E /* NSNumber+Helpers.m in Sources */,
+				5A13DBED1BCE3F6600BD466E /* CBAtm.m in Sources */,
+				5A13DBE81BCE3F3800BD466E /* CBTransaction.m in Sources */,
+				5A13DC171BCF852B00BD466E /* NSDate+Helpers.m in Sources */,
+				5A13DC0D1BCE598700BD466E /* CBAccountTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A13DBA91BCE3BC800BD466E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A13DBAA1BCE3BC800BD466E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A13DBC81BCE3BC800BD466E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A13DBC91BCE3BC800BD466E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A13DBCB1BCE3BC800BD466E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CBTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Vlad-Software.CBTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A13DBCC1BCE3BC800BD466E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CBTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Vlad-Software.CBTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A13DB981BCE3BC700BD466E /* Build configuration list for PBXProject "CBTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A13DBC81BCE3BC800BD466E /* Debug */,
+				5A13DBC91BCE3BC800BD466E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A13DBCA1BCE3BC800BD466E /* Build configuration list for PBXNativeTarget "CBTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A13DBCB1BCE3BC800BD466E /* Debug */,
+				5A13DBCC1BCE3BC800BD466E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A13DB951BCE3BC700BD466E /* Project object */;
+}
